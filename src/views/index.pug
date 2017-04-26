@@ -1,0 +1,9 @@
+html
+  head
+    title='File Metadata Microservice'
+
+  body
+    p='Submit a file to view its size.'
+    form(method='POST' action='/get-file-size' enctype='multipart/form-data')
+      input(type='file' name='file')
+      input(type='submit' value='Submit')
